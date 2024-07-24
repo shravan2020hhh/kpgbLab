@@ -1,0 +1,128 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1618 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=27736, tid=0x0000000000006cec
+#
+# JRE version:  ((uninitialized)) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.301-b09 mixed mode, sharing windows-amd64 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x000000182d940000,0x000000182da40000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32ed79]
+V  [jvm.dll+0x275722]
+V  [jvm.dll+0x2763cd]
+V  [jvm.dll+0x26ce05]
+V  [jvm.dll+0x509d]
+V  [jvm.dll+0x291b33]
+V  [jvm.dll+0x238744]
+V  [jvm.dll+0x162876]
+C  [javaw.exe+0x2322]
+C  [javaw.exe+0x16544]
+C  [KERNEL32.DLL+0x1412]
+C  [ntdll.dll+0x15504]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+Dynamic libraries:
+0x00007ff786760000 - 0x00007ff7867a7000 	C:\Program Files\Java\jdk1.8.0_301\bin\javaw.exe
+0x00007ff880b60000 - 0x00007ff880d0d000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff87e730000 - 0x00007ff87e86f000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ff87e0c0000 - 0x00007ff87e1d4000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ff87bd10000 - 0x00007ff87bd9e000 	C:\Windows\system32\apphelp.dll
+0x00007ff8692d0000 - 0x00007ff869325000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ff8808c0000 - 0x00007ff88096a000 	C:\Windows\system32\msvcrt.dll
+0x00007ff87e090000 - 0x00007ff87e0be000 	C:\Windows\system32\SspiCli.dll
+0x00007ff880b00000 - 0x00007ff880b54000 	C:\Windows\system32\SHLWAPI.dll
+0x00007ff87e4d0000 - 0x00007ff87e647000 	C:\Windows\system32\USER32.dll
+0x00007ff8803e0000 - 0x00007ff880575000 	C:\Windows\system32\ole32.dll
+0x00007ff87ebc0000 - 0x00007ff8800ef000 	C:\Windows\system32\SHELL32.dll
+0x00007ff87cd90000 - 0x00007ff87cdb1000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ff87eb00000 - 0x00007ff87ebad000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ff8692b0000 - 0x00007ff8692ce000 	C:\Windows\SYSTEM32\MPR.dll
+0x00007ff87e870000 - 0x00007ff87e9a5000 	C:\Windows\system32\RPCRT4.dll
+0x00007ff880100000 - 0x00007ff88015b000 	C:\Windows\SYSTEM32\sechost.dll
+0x00007ff87e2a0000 - 0x00007ff87e4b2000 	C:\Windows\SYSTEM32\combase.dll
+0x00007ff87e9b0000 - 0x00007ff87eaff000 	C:\Windows\system32\GDI32.dll
+0x00007ff87dbb0000 - 0x00007ff87dbc5000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ff87d1f0000 - 0x00007ff87d2a2000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x00007ff87e6f0000 - 0x00007ff87e726000 	C:\Windows\system32\IMM32.DLL
+0x00007ff880580000 - 0x00007ff8806d1000 	C:\Windows\system32\MSCTF.dll
+0x00007ff87d650000 - 0x00007ff87d8cb000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.19394_none_62486577ecb635cf\COMCTL32.dll
+0x00007ff8744a0000 - 0x00007ff8744b5000 	C:\Program Files\Java\jdk1.8.0_301\jre\bin\vcruntime140.dll
+0x00007ff871060000 - 0x00007ff871064000 	C:\Windows\SYSTEM32\api-ms-win-crt-runtime-l1-1-0.dll
+0x00007ff8701f0000 - 0x00007ff8701f3000 	C:\Windows\SYSTEM32\api-ms-win-crt-heap-l1-1-0.dll
+0x00007ff8701a0000 - 0x00007ff8701a4000 	C:\Windows\SYSTEM32\api-ms-win-crt-string-l1-1-0.dll
+0x00007ff8701d0000 - 0x00007ff8701d4000 	C:\Windows\SYSTEM32\api-ms-win-crt-stdio-l1-1-0.dll
+0x00007ff870140000 - 0x00007ff870144000 	C:\Windows\SYSTEM32\api-ms-win-crt-convert-l1-1-0.dll
+0x00007ff870030000 - 0x00007ff870124000 	C:\Windows\SYSTEM32\ucrtbase.DLL
+0x00007ff863760000 - 0x00007ff8637fb000 	C:\Program Files\Java\jdk1.8.0_301\jre\bin\msvcp140.dll
+0x00007ff870180000 - 0x00007ff870183000 	C:\Windows\SYSTEM32\api-ms-win-crt-locale-l1-1-0.dll
+0x00007ff870190000 - 0x00007ff870195000 	C:\Windows\SYSTEM32\api-ms-win-crt-math-l1-1-0.dll
+0x00007ff870160000 - 0x00007ff870163000 	C:\Windows\SYSTEM32\api-ms-win-crt-filesystem-l1-1-0.dll
+0x00007ff870150000 - 0x00007ff870153000 	C:\Windows\SYSTEM32\api-ms-win-crt-time-l1-1-0.dll
+0x00007ff8701e0000 - 0x00007ff8701e3000 	C:\Windows\SYSTEM32\api-ms-win-crt-environment-l1-1-0.dll
+0x00007ff870130000 - 0x00007ff870133000 	C:\Windows\SYSTEM32\api-ms-win-crt-utility-l1-1-0.dll
+0x0000000068d40000 - 0x00000000695a0000 	C:\Program Files\Java\jdk1.8.0_301\jre\bin\server\jvm.dll
+0x00007ff86f850000 - 0x00007ff86f859000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ff878ac0000 - 0x00007ff878ae2000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff87c390000 - 0x00007ff87c39a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff87e4c0000 - 0x00007ff87e4c7000 	C:\Windows\system32\PSAPI.DLL
+0x00007ff880380000 - 0x00007ff8803da000 	C:\Windows\system32\WS2_32.dll
+0x00007ff878570000 - 0x00007ff87859a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ff87e6c0000 - 0x00007ff87e6c9000 	C:\Windows\system32\NSI.dll
+0x00007ff87dcd0000 - 0x00007ff87dd1f000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x00007ff87bf90000 - 0x00007ff87bfb8000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x00007ff869590000 - 0x00007ff86971a000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-16.0.2
+PATH=C:\Program Files\Java\jdk1.8.0_301\jre\bin;C:/Program Files/Java/jdk-16.0.2/bin/server;C:/Program Files/Java/jdk-16.0.2/bin;C:\Program Files\Java\jdk-16.0.2\bin;C:\Program Files\nodejs\;C:\windows\system32;C:\Users\HP\AppData\Roaming\npm;C:\Users\HP\Documents\Shubham Software Testing\eclipse;
+USERNAME=HP
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 (6.3.9600.20778)
+
+CPU:total 4 (initial active 0) 
+
+Memory: 4k page, physical 8309008k(869032k free), swap 33474832k(126580k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.301-b09) for windows-amd64 JRE (1.8.0_301-b09), built on Jun  9 2021 06:46:21 by "java_re" with MS VC++ 15.9 (VS2017)
+
+time: Thu Sep 28 12:11:50 2023
+timezone: India Standard Time
+elapsed time: 0.243702 seconds (0d 0h 0m 0s)
+
