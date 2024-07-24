@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;;
 
 public class SendKeys_Click {
 	static WebDriver driver = new ChromeDriver();// global variable can access ANYWHERE
