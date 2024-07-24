@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.chrome.ChromeDriver;;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SendKeys_Click {
 	static WebDriver driver = new ChromeDriver();// global variable can access ANYWHERE
@@ -29,6 +29,7 @@ public class SendKeys_Click {
 					break;
 				}
 			}
+			//Using jSE
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			WebElement login = driver.findElement(By.cssSelector("input[class='r4vIwl BV+Dqf']"));
 			js.executeScript("arguments[0].value='srvana';", login);
